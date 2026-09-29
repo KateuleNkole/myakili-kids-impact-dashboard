@@ -1,6 +1,17 @@
 # myAkili Kids — Impact Dashboard
 
-**Status:** In Progress
+## Project Status
+
+| Stage | Status |
+|---|---|
+| Business problem definition | ✅ Complete |
+| Synthetic dataset development | ✅ Complete |
+| Data structure & KPI framework | ✅ Complete |
+| SQL analysis | ✅ Developed |
+| Power BI dashboard | 🔄 In Development |
+| Final insights & recommendations | ⏳ Planned |
+
+**Current focus:** Developing the Power BI dashboard to visualise programme reach, engagement and simulated financial literacy outcomes.
 
 ## About the Programme
 
@@ -41,30 +52,15 @@ The dataset is designed for portfolio and learning purposes and does **not** rep
 
 ## Analytical Approach
 
-### 1. Data Preparation — Python
+## Analytical Approach
 
-Python is used to:
+**Excel** — structured the synthetic programme dataset and defined relationships across participants, sites, sessions, attendance and assessments.
 
-* Generate and structure the simulated dataset
-* Check data quality
-* Clean and transform variables
-* Prepare datasets for analysis
+**SQL** — developed queries to analyse programme reach, attendance, site performance and simulated pre/post assessment outcomes.
 
-### 2. Data Analysis — SQL
+**Power BI** — dashboard development in progress, focusing on executive KPIs, site comparisons, attendance and assessment outcomes.
 
-SQL is used to answer business questions such as:
-
-* How many participants were reached?
-* What is the attendance rate by site?
-* Which sites have the highest participation?
-* What is the average pre-programme score?
-* What is the average post-programme score?
-* How did assessment scores change after participation?
-* How does engagement vary across programme sites?
-
-### 3. Dashboard — Power BI
-
-Power BI will be used to develop an interactive programme performance dashboard covering:
+**Python** — planned for additional data validation and automation.
 
 **Programme Overview**
 
