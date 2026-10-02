@@ -1,143 +1,276 @@
-# myAkili Kids — Impact Dashboard
+# myAkili Kids — Impact Analytics Dashboard
 
-## Project Status
+An end-to-end analytics portfolio project exploring programme reach, attendance, participant demographics and simulated financial literacy learning outcomes using Excel, SQL and Power BI.
 
-| Stage | Status |
-|---|---|
-| Business problem definition | ✅ Complete |
-| Synthetic dataset development | ✅ Complete |
-| Data structure & KPI framework | ✅ Complete |
-| SQL analysis | ✅ Developed |
-| Power BI dashboard | 🔄 In Development |
-| Final insights & recommendations | ⏳ Planned |
+> **Data Privacy Note:** This portfolio project uses entirely synthetic participant-level data created for demonstration purposes. It does not contain confidential participant information or represent measured impact results from the actual myAkili Kids programme.
 
-**Current focus:** Developing the Power BI dashboard to visualise programme reach, engagement and simulated financial literacy outcomes.
+---
 
-## About the Programme
+## Project Context
 
-**myAkili Kids** is a financial literacy initiative implemented by Hitalys Consulting Services, designed to help children and young people develop practical financial knowledge, saving habits and an entrepreneurial mindset.
+myAkili Kids is a digital financial literacy programme delivered by Hitalys Consulting Services, reaching 800+ children across 5+ schools in Zambia.
 
-The programme has reached **800+ children across 5+ schools/sites in Zambia**.
+This portfolio project demonstrates how programme data can be structured, analysed and visualised to support management decision-making while protecting confidential participant information.
+
+The analytical dataset used in this repository is therefore simulated.
+
+---
 
 ## Business Question
 
-How is the programme performing across participating schools and sites in terms of:
+**How can programme data be used to understand reach, attendance, participant characteristics and changes in financial literacy assessment scores across programme sites?**
 
-* Programme reach
-* Session attendance
-* Participant engagement
-* Financial literacy assessment results
-* Change in scores between pre- and post-programme assessments
-* Alumni engagement
+The analysis focuses on:
 
-The objective is to demonstrate how programme data can be transformed into practical insights for monitoring performance and supporting programme decision-making.
+- Programme reach
+- Session attendance and engagement
+- Participant demographics
+- Simulated pre- and post-assessment outcomes
 
-## Data
+---
 
-This project uses a **simulated dataset based on the structure of the myAkili Kids programme**.
+## Project Status
 
-No confidential participant information is used.
+- Business problem definition: Complete
+- Synthetic dataset development: Complete
+- Data structure & KPI framework: Complete
+- SQL analysis: Developed
+- Power BI dashboard: Complete
+- Final insights: Complete
 
-The simulated dataset represents programme concepts such as:
+---
 
-* Schools/sites
-* Participants
-* Sessions
-* Attendance
-* Pre-programme assessment scores
-* Post-programme assessment scores
-* Alumni engagement
+## Dashboard Preview
 
-The dataset is designed for portfolio and learning purposes and does **not** represent actual participant-level programme results.
+### Executive Overview
+
+![Executive Overview](powerbi/executive_overview.png)
+
+The Executive Overview provides a management-level view of programme reach, attendance, sessions delivered and simulated learning outcomes.
+
+It includes:
+
+- Total participants
+- Total programme sites
+- Total sessions
+- Overall attendance rate
+- Average score gain
+- Programme reach by site
+- Pre- vs post-assessment performance by site
+- Attendance rate by site
+- Interactive programme, age-group and gender filters
+
+### Participant & Learning Analysis
+
+![Participant and Learning Analysis](powerbi/participant_learning_analysis.png)
+
+The Participant & Learning Analysis page explores simulated learning outcomes and participant demographics.
+
+It includes:
+
+- Average pre-assessment score
+- Average post-assessment score
+- Average score gain
+- Score improvement by age group
+- Pre- vs post-assessment scores by gender
+- Participant distribution by age group
+- Participant distribution by gender
+- Interactive demographic filters
+
+---
+
+## Dataset
+
+A synthetic relational dataset was developed for the project using five core tables:
+
+| Table | Purpose |
+|---|---|
+| Schools | Programme site information |
+| Participants | Participant demographics and programme site assignment |
+| Sessions | Programme session information |
+| Attendance | Participant attendance by session |
+| Assessments | Simulated pre- and post-assessment scores |
+
+The portfolio dataset contains:
+
+- **120 synthetic participants**
+- **5 simulated programme sites**
+- **20 programme sessions**
+- **480 attendance records**
+
+---
+
+## Key KPIs
+
+| KPI | Synthetic Portfolio Result |
+|---|---:|
+| Total Participants | 120 |
+| Programme Sites | 5 |
+| Sessions | 20 |
+| Attendance Rate | 85% |
+| Average Pre-Assessment Score | 53.5 |
+| Average Post-Assessment Score | 68.7 |
+| Average Score Gain | 15.2 points |
+
+These figures are generated from the synthetic portfolio dataset and should not be interpreted as actual myAkili Kids programme results.
+
+---
+
+## Key Findings
+
+Analysis of the synthetic portfolio dataset showed:
+
+- Overall simulated attendance was **85%**.
+- Site-level attendance ranged from **80% to 90%**.
+- Average assessment scores increased from **53.5 to 68.7**.
+- The average simulated score gain was **15.2 points**.
+- Participant reach was evenly distributed across the five simulated programme sites.
+- Simulated learning gains were relatively consistent across age groups.
+- Both gender groups recorded higher average post-assessment scores than pre-assessment scores.
+- Participant representation was evenly split by gender in the synthetic dataset.
+
+These findings demonstrate the types of programme insights that can be generated from structured monitoring and evaluation data.
+
+**They do not represent measured outcomes from actual myAkili Kids participants.**
+
+---
 
 ## Analytical Approach
 
-## Analytical Approach
+### Excel
 
-**Excel** — structured the synthetic programme dataset and defined relationships across participants, sites, sessions, attendance and assessments.
+Excel was used to develop and structure the synthetic relational dataset, including:
 
-**SQL** — developed queries to analyse programme reach, attendance, site performance and simulated pre/post assessment outcomes.
+- Participants
+- Programme sites
+- Sessions
+- Attendance records
+- Assessment results
+- KPI definitions
 
-**Power BI** — dashboard development in progress, focusing on executive KPIs, site comparisons, attendance and assessment outcomes.
+### SQL
 
-**Python** — planned for additional data validation and automation.
+SQL queries were developed to analyse:
 
-**Programme Overview**
+- Programme reach
+- Attendance
+- Site-level performance
+- Participant engagement
+- Pre- and post-assessment outcomes
+- Score improvement
 
-* Total participants
-* Total schools/sites
-* Sessions delivered
-* Attendance rate
+The SQL files demonstrate analytical logic using techniques including:
 
-**Financial Literacy Outcomes**
+- SELECT statements
+- Aggregations
+- GROUP BY
+- JOINs
+- CASE statements
 
-* Average pre-assessment score
-* Average post-assessment score
-* Average score improvement
-* Percentage of participants showing improvement
+The SQL analysis was developed as part of the portfolio project and is not presented as a deployed production database solution.
 
-**Site Performance**
+### Power BI
 
-* Participation by school/site
-* Attendance by site
-* Assessment performance by site
+Power BI was used to transform the structured dataset into an interactive analytical dashboard.
 
-**Engagement**
+The Power BI work demonstrates:
 
-* Session participation
-* Alumni engagement
-* Participant engagement trends
+- Data modelling
+- Table relationships
+- DAX measures
+- KPI development
+- Interactive slicers
+- Comparative analysis
+- Executive dashboard design
+- Demographic analysis
+- Programme performance visualisation
 
-## Planned Dashboard
+---
 
-The final dashboard will provide an executive-level view of programme reach, participation and learning outcomes.
+## Tools & Skills Demonstrated
 
-Screenshots will be added as the Power BI dashboard is completed.
+**Tools**
 
-## Skills Demonstrated
+- Microsoft Excel
+- SQL
+- Microsoft Power BI
+- GitHub
 
-* Power BI
-* Data modelling
-* Power Query
-* DAX
-* SQL
-* Python
-* Data cleaning
-* Data analysis
-* KPI development
-* Data visualisation
-* Business intelligence
-* Programme performance analysis
-* Impact measurement
-* Data storytelling
+**Analytical Skills**
 
-## Project Purpose
+- Business problem definition
+- Data structuring
+- Relational data modelling
+- KPI development
+- Data analysis
+- DAX
+- SQL analysis
+- Data visualisation
+- Dashboard design
+- Management reporting
+- Insight generation
 
-This project demonstrates how business intelligence techniques can be applied to a real-world programme context to convert structured programme data into meaningful management information.
+---
 
-Although the project is based on a programme I have worked with, the analytical dataset is simulated to protect confidential participant information.
+## Repository Structure
+
+```text
+myakili-kids-impact-dashboard/
+│
+├── data/
+│   └── myAkili_Kids_Impact_Data.xlsx
+│
+├── docs/
+│   └── kpi_definitions.md
+│
+├── sql/
+│   ├── 01_programme_overview.sql
+│   ├── 02_attendance_analysis.sql
+│   └── 03_assessment_analysis.sql
+│
+├── powerbi/
+│   ├── executive_overview.png
+│   ├── participant_learning_analysis.png
+│   ├── myAkili_Kids_Impact_Dashboard.pbix
+│   └── README.md
+│
+└── README.md
+```
+
+---
+
+## Project Workflow
+
+1. Defined the programme monitoring and business questions.
+2. Designed a synthetic dataset to protect confidential participant information.
+3. Structured programme data in Excel.
+4. Defined programme KPIs and analytical requirements.
+5. Developed SQL queries for programme, attendance and assessment analysis.
+6. Built a relational data model in Power BI.
+7. Developed DAX measures for core programme KPIs.
+8. Created an Executive Overview dashboard.
+9. Created a Participant & Learning Analysis dashboard.
+10. Documented findings, methodology and limitations for portfolio presentation.
+
+---
+
+## Limitations
+
+This is a portfolio demonstration project.
+
+The participant-level dataset is synthetic and was designed to demonstrate analytics techniques rather than evaluate the actual impact of the myAkili Kids programme.
+
+The simulated results should therefore not be generalised to real programme participants or interpreted as evidence of programme effectiveness.
+
+---
 
 ## Author
 
 **Kateule Nkole Mwanza**
 
-Business & Financial Analyst | Business Analysis | Data & Business Intelligence | Strategy & Innovation
+Business & Financial Analyst | Data • Strategy • Innovation
 
-I supported partnerships and coordination for myAkili Kids across programme sites.
-
-AI tools, including Claude and GitHub Copilot, may be used to support learning, coding and documentation. All generated work is reviewed, tested and understood by the author.
-
-## Progress Log
-
-| Date         | Progress                              |
-| ------------ | ------------------------------------- |
-| 30 MAY 2026 | Repository created and project scoped |
-| TBD          | Simulated dataset created             |
-| TBD          | Python data preparation completed     |
-| TBD          | SQL analysis completed                |
-| TBD          | Power BI dashboard developed          |
-| TBD          | Dashboard insights documented         |
-
-
-## Progress log
+LinkedIn: linkedin.com/in/kateulenkolemwanza  
+GitHub: github.com/KateuleNkole
 - 30 MAY 2026: Repository created, project scoped
+- 02 October 2026: Repository updated.
